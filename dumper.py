@@ -13,7 +13,7 @@ def dump_to_file(agent,base,size,error,directory):
                 return error
         except Exception as e:
             logging.debug("[!]"+str(e))
-            print("Oops, memory access violation!")
+            #print("Oops, memory access violation!")
             return error
 
 #Read bytes that are bigger than the max_size value, split them into chunks and save them to a file
